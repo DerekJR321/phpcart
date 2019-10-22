@@ -1,0 +1,495 @@
+html {
+    height: 100%;
+    min-height: 100%;
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body {
+    font: 100%/1 'PT Serif', sans-serif;
+    padding-top: 56px;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    margin-top: 2em;
+    background-color: #ddd;
+    border: none;
+    height: 1px;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
+}
+
+/* cart css */
+.cart, .checkout{width: 100%;}
+.cart input[type="number"]{width: 75px;}
+.checkout h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+form.add-to-cart div,
+form.add-to-cart p {
+    text-align: center;
+}
+
+body#checkout-page #site-info {
+    position: static;
+}
+
+#shopping-cart {
+    margin: 1.5em 0;
+}
+
+.shopping-cart {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.shopping-cart th {
+    font-size: 1.3em;
+    padding: 0.3em;
+    width: 33.3%;
+    border: 1px solid #ddd;
+    text-transform: uppercase;
+}
+
+.shopping-cart td {
+    padding: 0.3em;
+    width: 33.3%;
+    border: 1px solid #ddd;
+}
+
+.shopping-cart tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.shopping-cart td.pdelete {
+    text-align: center;
+}
+
+.pdelete a,
+.pdelete a:hover {
+    color: #c00;
+    text-decoration: none;
+    font-size: 2.5em;
+    display: block;
+    text-align: center;
+}
+
+#shopping-cart-actions {
+    margin: 1.5em 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#shopping-cart-actions li {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+#pricing {
+    padding: 0.5em;
+    margin: 1em 0;
+    background: #fafafa;
+}
+
+#sub-total {
+    margin: 1.5em 0;
+    text-align: right;
+}
+
+#sub-total span {
+    margin-left: 1em;
+}
+
+#content > h1,
+#checkout-order-form h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+#pricing #sub-total,
+#pricing #shipping {
+    margin: 1em 0;
+}
+
+#checkout-order-form {
+    margin: 1.5em 0;
+}
+
+#checkout-order-form fieldset {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1em;
+    margin-bottom: 1.3em;
+}
+
+#checkout-order-form legend {
+    padding: 0.3em;
+    background: #fafafa;
+    font-weight: bold;
+}
+
+#checkout-order-form div {
+    margin-bottom: 1em;
+}
+
+#checkout-order-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    text-align: left;
+}
+
+#checkout-order-form input[type="text"] {
+    width: 200px;
+    display: block;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.3em;
+}
+
+#checkout-order-form select {
+    width: 200px;
+    display: block;
+}
+
+.message {
+    display: block;
+    margin: 0.5em 0;
+    color: red;
+}
+
+#user-details {
+    margin: 1.5em 0;
+}
+
+#user-details > h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+#user-details-content {
+    margin: 1.5em 0;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+#user-details-content .detail {
+    float: left;
+    width: 46%;
+}
+
+#user-details-content .detail.right {
+    float: right;
+}
+
+#user-details-content .detail > h2 {
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+}
+
+#user-details-content ul {
+    margin: 0 0 1em 0;
+    padding: 0;
+    list-style: none;
+}
+
+#user-details-content li {
+    display: block;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #ddd;
+}
+
+#paypal-form {
+    margin: 1.5em 0;
+}
+
+.category {
+    text-transform: capitalize;
+}
+
+.cart-view {
+    margin-top: 20px;
+}
+
+/* view cart page */
+.shopping-cart {
+    margin-top: 20px;
+}
+
+/* sidebar */
+.side-box {
+    margin-top: 10px;
+}
+.side {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #222;
+}
+
+
+.side:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hvr-fade:before {
+    background: #375A7F;
+}
+
+/* checkout */
+.lh-condensed {
+    line-height: 1.25;
+}
+
+/* payment icon changes */
+.payment-methods {
+    padding-left: 0;
+    list-style: none;
+    margin-left: -2px;
+    color: #ffffff;
+}
+
+.payment-methods>li {
+    display: inline-block;
+    padding: 2px;
+    vertical-align: top;
+}
+
+.payment-methods>li>i {
+    display: block!important;
+    cursor: default;
+    padding: 4px;
+    font-size: 1.7rem;
+    line-height: 1;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.payment-methods.payment-methods-i>li>i,
+.payment-methods.payment-methods-inverse>li>i {
+    color: #fff;
+    background: #555;
+    border-color: #555
+}
+
+.payment-methods.payment-methods-o>li>i,
+.payment-methods.payment-methods-outline>li>i {
+    color: #555;
+    border-color: #555
+}
+
+/* pay by credit card */
+.credit-card-box .panel-title {
+    display: inline;
+    font-weight: bold;
+}
+
+.credit-card-box .form-control.error {
+    border-color: red;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.credit-card-box label.error {
+    font-weight: bold;
+    color: red;
+    padding: 2px 8px;
+    margin-top: 2px;
+}
+
+.credit-card-box .payment-errors {
+    font-weight: bold;
+    color: red;
+    padding: 2px 8px;
+    margin-top: 2px;
+}
+
+.credit-card-box label {
+    display: block;
+}
+
+/* The old "center div vertically" hack */
+.credit-card-box .display-table {
+    display: table;
+}
+.credit-card-box .display-tr {
+    display: table-row;
+}
+.credit-card-box .display-td {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+/* Just looks nicer */
+.credit-card-box .panel-heading img {
+    min-width: 180px;
+}
+
+.box { display:none; }
+
+/* payments hover */
+.pf:hover {
+    color: #FFF;
+}
