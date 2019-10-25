@@ -1,4 +1,5 @@
-PHPCart: Created by Derek Reidy
+# PHPCart
+Created by Derek Reidy
 
 ***********************************************************
 
